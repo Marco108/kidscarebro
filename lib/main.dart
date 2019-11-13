@@ -1,64 +1,94 @@
 import 'package:flutter/material.dart';
+import 'package:kid/screen/calender_screen.dart';
+import 'package:kid/screen/dashboard.dart';
+import 'package:kid/screen/persional_information.dart';
+import 'package:kid/utils/dimension.dart';
+import 'package:kid/widget/appbar.dart';
+import 'package:kid/widget/checked.dart';
+import 'package:kid/widget/details_kid.dart';
+import 'package:kid/widget/foodpage.dart';
+//import 'package:kidscare/screen/diary.dart';
+
+import 'package:kid/screen/details.dart';
+import 'package:kid/screen/pageview.dart';
+import 'package:kid/widget/imagedoctor.dart';
+import 'package:kid/widget/picture_overlap.dart';
+//import 'package:kidscare/screen/Register.dart';
+//import 'package:kidscare/view/testui.dart';
+import 'package:kid/widget/textfield.dart';
+//import 'package:kidscare/widget/TextField.dart' as prefix0;
+//import 'package:kidscare/widget/bottomnavigation.dart';
 import 'package:kid/screen/mainscreen.dart';
-import 'package:kid/widget/chart.dart';
+import 'package:kid/widget/calender.dart';
 
-void main() => runApp(MyApp());
+//import 'package:kidscare/view/introduce1.dart';
 
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
-    );
-  }
+void main() {
+  runApp(new MaterialApp(
+    home: new MyApp(),
+  ));
 }
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-  final String title;
-
+class MyApp extends StatefulWidget {
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _MyAppState createState() => _MyAppState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+//class _MyAppState extends State<MyApp> {
+//@override
+//Widget build(BuildContext context) {
+//return MaterialApp(home: HomeScreen());
+//}
+//}
 
+class _MyAppState extends State<MyApp> {
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
-            ),
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.push(
+  void initState() {
+    super.initState();
+    new Future.delayed(
+        const Duration(seconds: 3),
+        () => Navigator.push(
               context,
-              MaterialPageRoute(
-                builder: (_) => LoginPage(),
-              ));
-        },
-        child: Icon(Icons.add),
+              MaterialPageRoute(builder: (context) => LoginPage()),
+            ));
+  }
+
+//class HomeScreen extends StatelessWidget {
+  //List<Widget> myPages = [IntroPage(), IntroPage1()];
+  @override
+  Widget build(BuildContext context) {
+    Dimension.width = MediaQuery.of(context).size.width;
+    Dimension.height = MediaQuery.of(context).size.height;
+    return Scaffold(
+      // backgroundColor: Color.fromRGBO(r, g, b, opacity),
+      body: Stack(
+        children: <Widget>[
+          Container(
+            height: MediaQuery.of(context).size.height,
+            width: MediaQuery.of(context).size.width,
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.bottomCenter,
+                end: Alignment.topCenter,
+                colors: [
+                  Color.fromRGBO(255, 76, 141, 1),
+                  Color.fromRGBO(252, 130, 106, 1),
+                ],
+              ),
+            ),
+          ),
+          Center(
+            child: CircleAvatar(
+              radius: 120,
+              backgroundImage: NetworkImage(
+                  "https://image.freepik.com/free-vector/children-day-concept-hand-drawn_23-2148327048.jpg"),
+            ),
+          ),
+        ],
       ),
+      //   body: PageView(
+      //  children: <Widget>[IntroPage(), IntroPage1()],
+      //   ),
     );
   }
 }
