@@ -15,12 +15,6 @@ class CustomDoctor extends StatelessWidget {
           height: 70.0,
           width: MediaQuery.of(context).size.width * 2.3,
           color: Colors.transparent,
-          //child: Card(
-          //// shape: RoundedRectangleBorder(
-          //  borderRadius: BorderRadius.circular(15.0),
-          // ),
-          // elevation: 10,
-          // color: Colors.yellowAccent,
           child: Container(
             margin: EdgeInsets.only(
               left: 20,

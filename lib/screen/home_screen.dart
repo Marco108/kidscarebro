@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:kid/model/modelmenu.dart';
+import 'package:kid/model/modelsuper.dart';
 import 'package:kid/screen/months_screen.dart';
 import 'package:kid/widget/menu.dart';
 import 'package:kid/widget/super_food.dart';
@@ -90,117 +92,48 @@ class _FoodScreenState extends State<HomeScreen> {
                   ),
                   _index == 0
                       ? Container(
-                          child: Column(
-                            children: <Widget>[
-                              Row(
-                                children: <Widget>[
-                                  Container(
-                                    margin:
-                                        EdgeInsets.only(left: 30, right: 30),
-                                    child: FoodWidget(
-                                      onTap: () {
-                                        Navigator.push(
-                                            context,
-                                            MaterialPageRoute(
-                                              builder: (_) => MonthsScreen(),
-                                            ));
-                                      },
-                                      title: "Tháng",
-                                      subtitle: "123 like",
-                                      image:
-                                          "https://www.bbcgoodfood.com/sites/default/files/recipe-collections/collection-image/2013/05/goulash.jpg",
-                                      isFavorate: true,
-                                    ),
-                                  ),
-                                  FoodWidget(
-                                    title: "4-5 Tháng",
-                                    subtitle: "123 like",
-                                    image:
-                                        "https://www.bbcgoodfood.com/sites/default/files/recipe-collections/collection-image/2013/05/goulash.jpg",
-                                    isFavorate: true,
-                                  ),
-                                ],
-                              ),
-                              SizedBox(
-                                height: 20,
-                              ),
-                              Row(
-                                children: <Widget>[
-                                  Container(
-                                    margin:
-                                        EdgeInsets.only(left: 30, right: 30),
-                                    child: FoodWidget(
-                                      title: "4-5 Tháng",
-                                      subtitle: "123 like",
-                                      image:
-                                          "https://www.bbcgoodfood.com/sites/default/files/recipe-collections/collection-image/2013/05/goulash.jpg",
-                                      isFavorate: true,
-                                    ),
-                                  ),
-                                  FoodWidget(
-                                    title: "4-5 Tháng",
-                                    subtitle: "123 like",
-                                    image:
-                                        "https://www.bbcgoodfood.com/sites/default/files/recipe-collections/collection-image/2013/05/goulash.jpg",
-                                    isFavorate: true,
-                                  ),
-                                ],
-                              )
-                            ],
+                          margin: EdgeInsets.only(left: 30),
+                          child: Wrap(
+                            spacing: 40,
+                            children: List.generate(lstmenu.length, (index) {
+                              return Container(
+                                child: FoodWidget(
+                                  title: lstmenu[index].title,
+                                  subtitle: lstmenu[index].subtitle,
+                                  image: lstmenu[index].image,
+                                  isFavorate: lstmenu[index].isFavorate,
+                                  onTap: () {
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (_) => MonthsScreen(),
+                                        ));
+                                  },
+                                ),
+                              );
+                            }),
                           ),
                         )
                       : Container(
-                          child: Column(
-                            children: <Widget>[
-                              Row(
-                                children: <Widget>[
-                                  Container(
-                                    margin:
-                                        EdgeInsets.only(left: 30, right: 10),
-                                    child: Superwidget(
-                                      title: "Cà Rốt",
-                                      subtitle: "có lợi",
-                                      image:
-                                          "https://anh.quatructuyen.com/media/catalog/product/cache/1/image/480x480/9df78eab33525d08d6e5fb8d27136e95/b/o/bo_chan_goi_ca_rot_13_.jpg",
-                                    ),
-                                  ),
-                                  Container(
-                                    margin:
-                                        EdgeInsets.only(left: 30, right: 10),
-                                    child: Superwidget(
-                                      title: "Cà Rốt",
-                                      subtitle: "có lợi",
-                                      image:
-                                          "https://anh.quatructuyen.com/media/catalog/product/cache/1/image/480x480/9df78eab33525d08d6e5fb8d27136e95/b/o/bo_chan_goi_ca_rot_13_.jpg",
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              Row(
-                                children: <Widget>[
-                                  Container(
-                                    margin:
-                                        EdgeInsets.only(left: 30, right: 10),
-                                    child: Superwidget(
-                                      title: "Cà Rốt",
-                                      subtitle: "có lợi",
-                                      image:
-                                          "https://anh.quatructuyen.com/media/catalog/product/cache/1/image/480x480/9df78eab33525d08d6e5fb8d27136e95/b/o/bo_chan_goi_ca_rot_13_.jpg",
-                                    ),
-                                  ),
-                                  Container(
-                                    margin:
-                                        EdgeInsets.only(left: 30, right: 10),
-                                    child: Superwidget(
-                                      title: "Cà Rốt",
-                                      subtitle: "có lợi",
-                                      image:
-                                          "https://anh.quatructuyen.com/media/catalog/product/cache/1/image/480x480/9df78eab33525d08d6e5fb8d27136e95/b/o/bo_chan_goi_ca_rot_13_.jpg",
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ],
+                          margin: EdgeInsets.only(left: 30),
+                          child: Wrap(
+                            spacing: 40,
+                            children: List.generate(lstsuper.length, (index) {
+                              return Container(
+                                child: Superwidget(
+                                  title: lstsuper[index].title,
+                                  subtitle: lstsuper[index].subtitle,
+                                  image: lstsuper[index].image,
+                                  onTap: () {
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (_) => MonthsScreen(),
+                                        ));
+                                  },
+                                ),
+                              );
+                            }),
                           ),
                         ),
                 ],
