@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class SuperfoodScreen extends StatelessWidget {
+class Superwidget extends StatelessWidget {
   final String title;
   final String subtitle;
   final String image;
   final Function onTap;
 
-  SuperfoodScreen({this.title, this.subtitle, this.image, this.onTap});
+  Superwidget({this.title, this.subtitle, this.image, this.onTap});
   @override
   Widget build(BuildContext context) {
     return Stack(

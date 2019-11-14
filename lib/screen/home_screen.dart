@@ -157,7 +157,7 @@ class _FoodScreenState extends State<HomeScreen> {
                                   Container(
                                     margin:
                                         EdgeInsets.only(left: 30, right: 10),
-                                    child: SuperfoodScreen(
+                                    child: Superwidget(
                                       title: "Cà Rốt",
                                       subtitle: "có lợi",
                                       image:
@@ -167,7 +167,7 @@ class _FoodScreenState extends State<HomeScreen> {
                                   Container(
                                     margin:
                                         EdgeInsets.only(left: 30, right: 10),
-                                    child: SuperfoodScreen(
+                                    child: Superwidget(
                                       title: "Cà Rốt",
                                       subtitle: "có lợi",
                                       image:
@@ -181,7 +181,7 @@ class _FoodScreenState extends State<HomeScreen> {
                                   Container(
                                     margin:
                                         EdgeInsets.only(left: 30, right: 10),
-                                    child: SuperfoodScreen(
+                                    child: Superwidget(
                                       title: "Cà Rốt",
                                       subtitle: "có lợi",
                                       image:
@@ -191,7 +191,7 @@ class _FoodScreenState extends State<HomeScreen> {
                                   Container(
                                     margin:
                                         EdgeInsets.only(left: 30, right: 10),
-                                    child: SuperfoodScreen(
+                                    child: Superwidget(
                                       title: "Cà Rốt",
                                       subtitle: "có lợi",
                                       image:
