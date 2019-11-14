@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kid/model/monthsmodel.dart';
 import 'package:kid/widget/months.dart';
 
 class MonthsScreen extends StatelessWidget {
@@ -9,59 +10,17 @@ class MonthsScreen extends StatelessWidget {
         title: Text("6 - 8 tháng"),
       ),
       body: Container(
-        child: SingleChildScrollView(
-          child: Column(
-            children: <Widget>[
-              MonthsWidget(
-                title: "chán thhjfgh",
-                subtitle: "ahiah đò chó",
-                image:
-                    "http://s3.weddbook.com/t4/2/4/9/2492384/blushing-pink-roses-bridal-hair-accessories-bohemian-wedding-hair-accessories-light-pink-hair-flower-bobby-pins-set-of-3.jpg",
+        child: Wrap(
+          //spacing: 40,
+          children: List.generate(lstmonths.length, (index) {
+            return Container(
+              child: MonthsWidget(
+                title: lstmonths[index].title,
+                subtitle: lstmonths[index].subtitle,
+                image: lstmonths[index].image,
               ),
-              MonthsWidget(
-                title: "chán thế nhỉ",
-                subtitle: "ahiah đò chó",
-                image:
-                    "http://s3.weddbook.com/t4/2/4/9/2492384/blushing-pink-roses-bridal-hair-accessories-bohemian-wedding-hair-accessories-light-pink-hair-flower-bobby-pins-set-of-3.jpg",
-              ),
-              MonthsWidget(
-                title: "chán thế nhỉ",
-                subtitle: "ahiah đò chó",
-                image:
-                    "http://s3.weddbook.com/t4/2/4/9/2492384/blushing-pink-roses-bridal-hair-accessories-bohemian-wedding-hair-accessories-light-pink-hair-flower-bobby-pins-set-of-3.jpg",
-              ),
-              MonthsWidget(
-                title: "chán thế nhỉ",
-                subtitle: "ahiah đò chó",
-                image:
-                    "http://s3.weddbook.com/t4/2/4/9/2492384/blushing-pink-roses-bridal-hair-accessories-bohemian-wedding-hair-accessories-light-pink-hair-flower-bobby-pins-set-of-3.jpg",
-              ),
-              MonthsWidget(
-                title: "chán thế nhỉ",
-                subtitle: "ahiah đò chó",
-                image:
-                    "http://s3.weddbook.com/t4/2/4/9/2492384/blushing-pink-roses-bridal-hair-accessories-bohemian-wedding-hair-accessories-light-pink-hair-flower-bobby-pins-set-of-3.jpg",
-              ),
-              MonthsWidget(
-                title: "chán thế nhỉ",
-                subtitle: "ahiah đò chó",
-                image:
-                    "http://s3.weddbook.com/t4/2/4/9/2492384/blushing-pink-roses-bridal-hair-accessories-bohemian-wedding-hair-accessories-light-pink-hair-flower-bobby-pins-set-of-3.jpg",
-              ),
-              MonthsWidget(
-                title: "chán thế nhỉ",
-                subtitle: "ahiah đò chó",
-                image:
-                    "http://s3.weddbook.com/t4/2/4/9/2492384/blushing-pink-roses-bridal-hair-accessories-bohemian-wedding-hair-accessories-light-pink-hair-flower-bobby-pins-set-of-3.jpg",
-              ),
-              MonthsWidget(
-                title: "chán thế nhỉ",
-                subtitle: "ahiah đò chó",
-                image:
-                    "http://s3.weddbook.com/t4/2/4/9/2492384/blushing-pink-roses-bridal-hair-accessories-bohemian-wedding-hair-accessories-light-pink-hair-flower-bobby-pins-set-of-3.jpg",
-              ),
-            ],
-          ),
+            );
+          }),
         ),
       ),
     );

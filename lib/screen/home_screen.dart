@@ -58,31 +58,54 @@ class _FoodScreenState extends State<HomeScreen> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: <Widget>[
-                      InkWell(
-                        onTap: () {
-                          setState(() {
-                            _index = 0;
-                          });
-                          /*Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (_) => FoodScreen(),
-                              ));*/
-                        },
-                        child: Text(
-                          "Menu",
-                          style: TextStyle(fontSize: 25),
+                      Expanded(
+                        child: InkWell(
+                          onTap: () {
+                            setState(() {
+                              _index = 0;
+                            });
+                          },
+                          child: Column(
+                            children: <Widget>[
+                              Text(
+                                "Menu",
+                                style: TextStyle(fontSize: 25),
+                              ),
+                              _index == 0
+                                  ? Container(
+                                      alignment: Alignment.centerLeft,
+                                      color: Colors.black,
+                                      width: 120,
+                                      height: 2,
+                                    )
+                                  : Container()
+                            ],
+                          ),
                         ),
                       ),
-                      InkWell(
-                        onTap: () {
-                          setState(() {
-                            _index = 1;
-                          });
-                        },
-                        child: Text(
-                          "Super Food",
-                          style: TextStyle(fontSize: 25),
+                      Expanded(
+                        child: InkWell(
+                          onTap: () {
+                            setState(() {
+                              _index = 1;
+                            });
+                          },
+                          child: Column(
+                            children: <Widget>[
+                              Text(
+                                "Super Food",
+                                style: TextStyle(fontSize: 25),
+                              ),
+                              _index == 1
+                                  ? Container(
+                                      alignment: Alignment.centerLeft,
+                                      color: Colors.black,
+                                      width: 120,
+                                      height: 2,
+                                    )
+                                  : Container()
+                            ],
+                          ),
                         ),
                       ),
                     ],
@@ -92,9 +115,9 @@ class _FoodScreenState extends State<HomeScreen> {
                   ),
                   _index == 0
                       ? Container(
-                          margin: EdgeInsets.only(left: 30),
+                          margin: EdgeInsets.only(left: 35),
                           child: Wrap(
-                            spacing: 40,
+                            spacing: 30,
                             children: List.generate(lstmenu.length, (index) {
                               return Container(
                                 child: FoodWidget(
@@ -115,9 +138,9 @@ class _FoodScreenState extends State<HomeScreen> {
                           ),
                         )
                       : Container(
-                          margin: EdgeInsets.only(left: 30),
+                          margin: EdgeInsets.only(left: 35),
                           child: Wrap(
-                            spacing: 40,
+                            spacing: 30,
                             children: List.generate(lstsuper.length, (index) {
                               return Container(
                                 child: Superwidget(
