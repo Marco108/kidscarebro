@@ -52,11 +52,9 @@ class FoodWidget extends StatelessWidget {
                             left: 6,
                           ),
                           child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: <Widget>[
                               Text(subtitle, style: TextStyle(fontSize: 15)),
-                              SizedBox(
-                                width: 43,
-                              ),
                               InkWell(
                                 onTap: onTap,
                                 child: Icon(Icons.favorite,

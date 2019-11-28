@@ -26,12 +26,14 @@ class TextPage extends StatelessWidget {
 class CustomTextField extends StatelessWidget {
   final Icon icon;
   final String hintText;
-  CustomTextField({this.icon, @required this.hintText});
+  final bool hintPass;
+  CustomTextField({this.icon, @required this.hintText, this.hintPass});
   @override
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.only(top: 20.0),
       child: TextField(
+        obscureText: hintPass,
         decoration: InputDecoration(
           icon: icon,
           hintText: hintText,

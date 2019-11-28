@@ -21,27 +21,35 @@ class RegisterPage extends StatelessWidget {
               children: <Widget>[
                 Image.asset(
                   "images/logo.png",
+                  height: 60,
+                ),
+                Container(
+                  margin: EdgeInsets.only(top: 30),
+                  child: CustomTextField(
+                    hintPass: false,
+                    icon: Icon(Icons.email),
+                    hintText: "Email",
+                  ),
                 ),
                 CustomTextField(
-                  icon: Icon(Icons.email),
-                  hintText: "Email address",
-                ),
-                CustomTextField(
+                  hintPass: false,
                   icon: Icon(Icons.perm_contact_calendar),
-                  hintText: "Full Name",
+                  hintText: "Họ và tên",
                 ),
                 CustomTextField(
+                  hintPass: false,
                   icon: Icon(Icons.phone),
-                  hintText: "Phone Number",
+                  hintText: "Số điện thoại",
                 ),
                 CustomTextField(
+                  hintPass: false,
                   icon: Icon(Icons.lock),
-                  hintText: "Password",
+                  hintText: "Mật khẩu",
                 ),
                 Container(
                   padding: EdgeInsets.only(top: 40),
                   child: CustomButton(
-                    text: "Sign Up",
+                    text: "Đăng Ký",
                     onTap: () {
                       Navigator.pop(context);
                     },
@@ -49,21 +57,21 @@ class RegisterPage extends StatelessWidget {
                 ),
                 Container(
                   padding: EdgeInsets.only(top: 30.0),
-                  child: Text("By creating design Phạm Mạnh Phi"),
+                  child: Text("Thiết kế bởi Phạm Mạnh Phi"),
                 ),
                 Container(
                   padding: EdgeInsets.only(top: 30.0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      Text("Already have an account?"),
+                      Text("Bạn đã sẵn sàng tạo tài khoản ? "),
                       InkWell(
                         onTap: () {
                           print("Trở về trang đăng nhập");
                           Navigator.pop(context);
                         },
                         child: Text(
-                          "Sign In",
+                          "Đăng nhập",
                           style: TextStyle(color: Colors.pink),
                         ),
                       ),

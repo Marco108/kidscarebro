@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
 class CustomCalender extends StatelessWidget {
-  final Icon icon;
+  //final Icon icon;
+  final Image image;
   final String text;
   //final String text2;
-  CustomCalender({this.text, this.icon});
+  CustomCalender({this.text, this.image});
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -15,7 +16,10 @@ class CustomCalender extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children: <Widget>[
-              icon,
+              Padding(
+                padding: const EdgeInsets.all(5.0),
+                child: image,
+              ),
               SizedBox(
                 width: 12,
               ),

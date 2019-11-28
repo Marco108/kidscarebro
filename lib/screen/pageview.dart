@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kid/screen/dashboard.dart';
+import 'package:kid/screen/login/mainscreen.dart';
 //import 'package:kidscare/screen/diary.dart';
 //import 'package:kidscare/view/Register.dart';
 
@@ -114,7 +115,7 @@ class _IntroPage2State extends State<IntroPage2> {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => DashboardScreen()));
+                                    builder: (context) => LoginPage()));
                           },
                           child: Container(
                             width: MediaQuery.of(context).size.width,
@@ -125,7 +126,7 @@ class _IntroPage2State extends State<IntroPage2> {
                               color: Colors.white,
                             ),
                             child: Text(
-                              "GET STARTED!",
+                              "HÃY BẮT ĐẦU!",
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                   fontSize: 20,

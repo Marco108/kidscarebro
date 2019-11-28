@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kid/screen/calender_screen.dart';
+import 'package:kid/screen/dashboard/calender_screen.dart';
 import 'package:kid/screen/dashboard.dart';
 import 'package:kid/screen/persional_information.dart';
 import 'package:kid/utils/dimension.dart';
@@ -18,7 +18,7 @@ import 'package:kid/widget/picture_overlap.dart';
 import 'package:kid/widget/textfield.dart';
 //import 'package:kidscare/widget/TextField.dart' as prefix0;
 //import 'package:kidscare/widget/bottomnavigation.dart';
-import 'package:kid/screen/mainscreen.dart';
+import 'package:kid/screen/login/mainscreen.dart';
 import 'package:kid/widget/calender.dart';
 
 //import 'package:kidscare/view/introduce1.dart';
@@ -49,7 +49,7 @@ class _MyAppState extends State<MyApp> {
         const Duration(seconds: 3),
         () => Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => LoginPage()),
+              MaterialPageRoute(builder: (context) => IntroPage2()),
             ));
   }
 
@@ -78,10 +78,9 @@ class _MyAppState extends State<MyApp> {
             ),
           ),
           Center(
-            child: CircleAvatar(
-              radius: 120,
-              backgroundImage: NetworkImage(
-                  "https://image.freepik.com/free-vector/children-day-concept-hand-drawn_23-2148327048.jpg"),
+            child: Image.asset(
+              "images/main.png",
+              height: 400,
             ),
           ),
         ],

@@ -82,7 +82,7 @@ class InformationScreen extends StatelessWidget {
                       Container(
                         margin: EdgeInsets.only(right: 200),
                         child: CustomCalender(
-                          icon: Icon(Icons.people_outline),
+                          image: Image.asset("images/Shape.png"),
                           text: 'Gia đình',
                         ),
                       ),
@@ -114,7 +114,7 @@ class InformationScreen extends StatelessWidget {
                     Container(
                       margin: EdgeInsets.only(right: 200),
                       child: CustomCalender(
-                        icon: Icon(Icons.star_border),
+                        image: Image.asset("images/Shape.png"),
                         text: 'Đánh giá',
                       ),
                     ),
@@ -134,7 +134,7 @@ class InformationScreen extends StatelessWidget {
                     Container(
                       margin: EdgeInsets.only(right: 208),
                       child: CustomCalender(
-                        icon: Icon(Icons.settings),
+                        image: Image.asset("images/Shape.png"),
                         text: 'Cài đăt',
                       ),
                     ),
@@ -160,7 +160,7 @@ class InformationScreen extends StatelessWidget {
                   Container(
                     margin: EdgeInsets.only(right: 200),
                     child: CustomCalender(
-                      icon: Icon(Icons.info_outline),
+                      image: Image.asset("images/Shape.png"),
                       text: 'Về chúng tôi',
                     ),
                   ),
@@ -176,7 +176,7 @@ class InformationScreen extends StatelessWidget {
                   Container(
                     margin: EdgeInsets.only(right: 200),
                     child: CustomCalender(
-                      icon: Icon(Icons.mail_outline),
+                      image: Image.asset("images/Shape.png"),
                       text: 'Phản hồi',
                     ),
                   ),
@@ -192,7 +192,7 @@ class InformationScreen extends StatelessWidget {
                   Container(
                     margin: EdgeInsets.only(right: 200),
                     child: CustomCalender(
-                      icon: Icon(Icons.subdirectory_arrow_left),
+                      image: Image.asset("images/Shape.png"),
                       text: 'Đăng xuất',
                     ),
                   ),

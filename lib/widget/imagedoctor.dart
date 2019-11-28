@@ -76,7 +76,7 @@ class CustomDoctor extends StatelessWidget {
                             ),
                             Text(
                               specialized,
-                              //textAlign: TextAlign.right,
+                              textAlign: TextAlign.right,
                               overflow: TextOverflow.ellipsis,
                               style: TextStyle(
                                 fontSize: 15,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+//import 'package:shimmer/shimmer.dart';
 import 'package:kid/model/modelmenu.dart';
 import 'package:kid/model/modelsuper.dart';
 import 'package:kid/screen/months_screen.dart';
@@ -30,22 +31,16 @@ class _FoodScreenState extends State<HomeScreen> {
                   "https://images-na.ssl-images-amazon.com/images/I/51v2Nh%2BfPBL._SL1100_.jpg"),
             ),
             title: Row(
+              //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                Container(
-                  alignment: Alignment.centerLeft,
-                  child: Text(
-                    'Nutrition',
-                    style: TextStyle(fontSize: 15),
-                  ),
-                ),
-                SizedBox(
-                  width: 170,
+                Expanded(
+                  child: Text("Dinh dưỡng"),
                 ),
                 Icon(Icons.search),
-                SizedBox(
-                  width: 20,
-                ),
-                Icon(Icons.format_list_bulleted)
+                Container(
+                    margin: EdgeInsets.only(left: 50),
+                    child: Icon(Icons.format_list_bulleted))
               ],
             ),
           ),

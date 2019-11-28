@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kid/screen/mainscreen.dart';
+import 'package:kid/screen/login/mainscreen.dart';
 import 'package:kid/widget/TextField.dart';
 import 'package:kid/widget/buttonsubmit.dart';
 
@@ -21,22 +21,27 @@ class ForgetPassPage extends StatelessWidget {
             children: <Widget>[
               Image.asset(
                 "images/logo.png",
+                height: 60,
               ),
-              Text(
-                "Forgot Password",
-                style: TextStyle(fontSize: 20),
+              Container(
+                margin: EdgeInsets.only(top: 40),
+                child: Text(
+                  "Quên Mật Khẩu",
+                  style: TextStyle(fontSize: 20),
+                ),
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 50.0),
                 child: CustomTextField(
+                  hintPass: false,
                   icon: Icon(Icons.email),
-                  hintText: "Enter Email ID",
+                  hintText: "Nhập Email ID",
                 ),
               ),
               Container(
                 padding: const EdgeInsets.only(top: 50.0),
                 child: CustomButton(
-                  text: "Submit",
+                  text: "Tiếp tục",
                   onTap: () {
                     Navigator.pop(context);
                   },

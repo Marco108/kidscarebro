@@ -104,7 +104,7 @@ class CalenderScreen extends StatelessWidget {
                 Container(
                   margin: EdgeInsets.only(top: 10),
                   child: CustomCalender(
-                    icon: Icon(Icons.calendar_today),
+                    image: Image.asset("images/Shape.png", height: 35),
                     text: "03 Feb 2018\nNasopharyngtis",
                     //  text2: "Nasopharyngtis",
                   ),
@@ -112,7 +112,7 @@ class CalenderScreen extends StatelessWidget {
                 Container(
                   margin: EdgeInsets.only(top: 5),
                   child: CustomCalender(
-                    icon: Icon(Icons.calendar_today),
+                    image: Image.asset("images/Shape.png", height: 35),
                     text: "23 Mar 2018\nSesonal Flu",
                     //text2: "Sesonal Flu",
                   ),
@@ -120,7 +120,7 @@ class CalenderScreen extends StatelessWidget {
                 Container(
                   margin: EdgeInsets.only(top: 5),
                   child: CustomCalender(
-                    icon: Icon(Icons.calendar_today),
+                    image: Image.asset("images/Shape.png", height: 35),
                     text: "15 May 2018\nEyesore",
                     //  text2: "Eyesore",
                   ),
@@ -128,7 +128,7 @@ class CalenderScreen extends StatelessWidget {
                 Container(
                   margin: EdgeInsets.only(top: 5),
                   child: CustomCalender(
-                    icon: Icon(Icons.calendar_today),
+                    image: Image.asset("images/shape.png", height: 35),
                     text: "24 Oct 2018\nNasopharyngtis",
                     // text2: "Nasopharyngtis",
                   ),
@@ -136,7 +136,10 @@ class CalenderScreen extends StatelessWidget {
                 Container(
                   margin: EdgeInsets.only(top: 5),
                   child: CustomCalender(
-                    icon: Icon(Icons.calendar_today),
+                    image: Image.asset(
+                      "images/shape.png",
+                      height: 35,
+                    ),
                     text: "09 Feb 2018\nNasopharyngtis",
                     // text2: "Nasopharyngtis",
                   ),
