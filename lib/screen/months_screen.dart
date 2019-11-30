@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kid/model/monthsmodel.dart';
+import 'package:kid/fakedata/monthsmodel.dart';
 import 'package:kid/widget/months.dart';
 
 class MonthsScreen extends StatelessWidget {

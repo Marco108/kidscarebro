@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:kid/model/childrenmodel.dart';
-import 'package:kid/model/doctormodel.dart';
+import 'package:kid/fakedata/childrenmodel.dart';
+import 'package:kid/fakedata/doctormodel.dart';
 import 'package:kid/screen/newborn_details.dart';
 import 'package:kid/widget/imagedoctor.dart';
 import 'package:kid/widget/picture_overlap.dart';

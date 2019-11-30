@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 //import 'package:shimmer/shimmer.dart';
-import 'package:kid/model/modelmenu.dart';
-import 'package:kid/model/modelsuper.dart';
+import 'package:kid/fakedata/modelmenu.dart';
+import 'package:kid/fakedata/modelsuper.dart';
 import 'package:kid/screen/months_screen.dart';
 import 'package:kid/widget/menu.dart';
 import 'package:kid/widget/super_food.dart';

@@ -54,7 +54,7 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   GestureDetector(
                     onTap: onToggleShowPass,
-                    child: Text(_showPass ? "HIDE" : "SHOW",
+                    child: Text(_showPass ? "Hide" : "Show",
                         style: TextStyle(
                             color: Colors.blue, fontWeight: FontWeight.bold)),
                   )

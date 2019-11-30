@@ -20,15 +20,13 @@ dependencies:
   bezier_chart: "^1.0.6"
   flutter:
     sdk: flutter
-
-  shimmer:
-  timeline_list: ^0.0.3
-  fl_chart: ^0.3.3
-
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
-
+  shimmer:
+  timeline_list: ^0.0.3
+  fl_chart: ^0.3.3
+  dio: ^3.0.3
 dev_dependencies:
   flutter_test:
     sdk: flutter
