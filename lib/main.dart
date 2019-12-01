@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:kid/screen/bodykid_screen.dart';
 import 'package:kid/screen/dashboard/calender_screen.dart';
 import 'package:kid/screen/dashboard.dart';
 import 'package:kid/screen/persional_information.dart';
+import 'package:kid/screen/weight_height.dart';
 import 'package:kid/utils/dimension.dart';
 import 'package:kid/widget/appbar.dart';
 import 'package:kid/widget/checked.dart';
@@ -49,7 +51,7 @@ class _MyAppState extends State<MyApp> {
         const Duration(seconds: 3),
         () => Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => IntroPage2()),
+              MaterialPageRoute(builder: (context) => WeightHeight_Screen()),
             ));
   }
 

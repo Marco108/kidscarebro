@@ -104,7 +104,7 @@ class CalenderScreen extends StatelessWidget {
                 Container(
                   margin: EdgeInsets.only(top: 10),
                   child: CustomCalender(
-                    image: Image.asset("images/Shape.png", height: 35),
+                    image: Image.asset("images/shape.png", height: 35),
                     text: "03 Feb 2018\nNasopharyngtis",
                     //  text2: "Nasopharyngtis",
                   ),
@@ -112,7 +112,7 @@ class CalenderScreen extends StatelessWidget {
                 Container(
                   margin: EdgeInsets.only(top: 5),
                   child: CustomCalender(
-                    image: Image.asset("images/Shape.png", height: 35),
+                    image: Image.asset("images/shape.png", height: 35),
                     text: "23 Mar 2018\nSesonal Flu",
                     //text2: "Sesonal Flu",
                   ),
@@ -120,7 +120,7 @@ class CalenderScreen extends StatelessWidget {
                 Container(
                   margin: EdgeInsets.only(top: 5),
                   child: CustomCalender(
-                    image: Image.asset("images/Shape.png", height: 35),
+                    image: Image.asset("images/shape.png", height: 35),
                     text: "15 May 2018\nEyesore",
                     //  text2: "Eyesore",
                   ),
@@ -150,9 +150,9 @@ class CalenderScreen extends StatelessWidget {
                   decoration: BoxDecoration(
                     boxShadow: [
                       BoxShadow(
-                        blurRadius: 13.0,
-                        color: Colors.black.withOpacity(.5),
-                        offset: Offset(6.0, 2.0),
+                        blurRadius: 6.0,
+                        color: Colors.black.withOpacity(0.5),
+                        // offset: Offset(6.0, 2.0),
                       ),
                     ],
                     color: Colors.white,

@@ -23,7 +23,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
-  shimmer:
+  shimmer: ^1.0.1
   timeline_list: ^0.0.3
   fl_chart: ^0.3.3
   dio: ^3.0.3
@@ -43,6 +43,39 @@ flutter:
   uses-material-design: true
   assets:
   - images/
+
+
+  fonts:
+  - family: SF-UI-BLACK
+    fonts:
+      - asset: assets/fonts/sf-ui-display-black.otf
+  - family: SF-UI-BOLD
+    fonts:
+      - asset: assets/fonts/sf-ui-display-bold.otf
+  - family: SF-UI-HEAVY
+    fonts:
+      - asset: assets/fonts/sf-ui-display-heavy.otf
+  - family: SF-UI-LIGHT
+    fonts:
+      - asset: assets/fonts/sf-ui-display-light.otf
+  - family: SF-UI-MEDIUM
+    fonts:
+      - asset: assets/fonts/sf-ui-display-medium.otf
+  - family: SF-UI-REGULAR
+    fonts:
+      - asset: assets/fonts/sf-ui-display-regular.otf
+  - family: SF-UI-SEMIBOLD
+    fonts:
+      - asset: assets/fonts/sf-ui-display-semibold.otf
+  - family: SF-UI-THIN
+    fonts:
+      - asset: assets/fonts/sf-ui-display-thin.otf
+  - family: SF-UI-ULTRALIGHT
+    fonts:
+      - asset: assets/fonts/sf-ui-display-ultralight.otf
+  
+
+  
   # To add assets to your application, add an assets section, like this:
   # assets:
   #  - images/a_dot_burr.jpeg

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-//import 'package:shimmer/shimmer.dart';
+import 'package:shimmer/shimmer.dart';
 import 'package:kid/fakedata/modelmenu.dart';
 import 'package:kid/fakedata/modelsuper.dart';
 import 'package:kid/screen/months_screen.dart';
@@ -63,14 +63,14 @@ class _FoodScreenState extends State<HomeScreen> {
                           child: Column(
                             children: <Widget>[
                               Text(
-                                "Menu",
+                                "Thực đơn",
                                 style: TextStyle(fontSize: 25),
                               ),
                               _index == 0
                                   ? Container(
                                       alignment: Alignment.centerLeft,
                                       color: Colors.black,
-                                      width: 120,
+                                      width: 130,
                                       height: 2,
                                     )
                                   : Container()
@@ -88,14 +88,14 @@ class _FoodScreenState extends State<HomeScreen> {
                           child: Column(
                             children: <Widget>[
                               Text(
-                                "Super Food",
+                                "Siêu thức ăn",
                                 style: TextStyle(fontSize: 25),
                               ),
                               _index == 1
                                   ? Container(
                                       alignment: Alignment.centerLeft,
                                       color: Colors.black,
-                                      width: 120,
+                                      width: 170,
                                       height: 2,
                                     )
                                   : Container()
