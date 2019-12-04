@@ -24,28 +24,28 @@ class _DashboardScreenState extends State<DashboardScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: listScreen[_index],
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-      floatingActionButton: new FloatingActionButton(
-        // child: Icon(Icons.add),
-        isExtended: false,
-        // notchMargin: 24.0,
-        backgroundColor: Colors.white.withOpacity(1.0),
-        onPressed: () => setState(() {
-          _index == 2 ? Colors.pink : Colors.grey;
-        }),
-        child: Container(
-          decoration: BoxDecoration(
-            shape: BoxShape.circle,
-            color: Colors.transparent,
-            image: DecorationImage(
-              fit: BoxFit.cover,
-              image: AssetImage(
-                "images/baby.png",
-              ),
-            ),
-          ),
-        ),
-      ),
+      // floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+      //   floatingActionButton: new FloatingActionButton(
+      // child: Icon(Icons.add),
+      // isExtended: false,
+      // notchMargin: 24.0,
+      //backgroundColor: Colors.white.withOpacity(1.0),
+      //onPressed: () => setState(() {
+      // _index == 2 ? Colors.pink : Colors.grey;
+      //}),
+      //child: Container(
+      // decoration: BoxDecoration(
+      // shape: BoxShape.circle,
+      //color: Colors.transparent,
+      //image: DecorationImage(
+      //fit: BoxFit.cover,
+      //image: AssetImage(
+      // "images/baby.png",
+      //),
+      //     ),
+      // ),
+      //),
+      //),
       bottomNavigationBar: BottomNavigationBar(
         onTap: (index) {
           setState(() {
@@ -70,7 +70,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
             title: Text(""),
           ),
           BottomNavigationBarItem(
-            icon: Icon(null),
+            icon: Image.asset(
+              "images/baby1.png",
+              color: _index == 2 ? Colors.pink : Colors.grey,
+            ),
             title: Text(""),
           ),
           BottomNavigationBarItem(
