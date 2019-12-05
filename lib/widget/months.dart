@@ -33,11 +33,13 @@ class MonthsWidget extends StatelessWidget {
                 margin: EdgeInsets.only(left: 14, top: 10),
                 child: Text(
                   title,
-                   overflow: TextOverflow.ellipsis,
+                  overflow: TextOverflow.ellipsis,
                   style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
                 ),
               ),
               Container(
+                width: MediaQuery.of(context).size.width * 1 / 2,
+                //color: Colors.pink,
                 margin: EdgeInsets.only(left: 14, top: 5),
                 child: Text(
                   subtitle,
@@ -52,8 +54,14 @@ class MonthsWidget extends StatelessWidget {
             height: 70,
             //alignment: Alignment.topLeft,
             margin: EdgeInsets.only(left: 40),
-            child: Image.network(
-              image,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.all(
+                Radius.circular(10),
+              ),
+              image: DecorationImage(
+                image: NetworkImage(image),
+                fit: BoxFit.cover,
+              ),
             ),
           )
         ],

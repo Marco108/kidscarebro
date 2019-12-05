@@ -40,14 +40,14 @@ class CustomDeatailsKid extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: <Widget>[
                 Text(
-                  "sdaasdas",
+                  "W:5.6 ~ 8 KG",
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 12,
                       fontFamily: 'SF-UI-BOLD'),
                 ),
                 Text(
-                  "asdasssad",
+                  "H:58.0 ~ 66.2 CM",
                   style: TextStyle(
                       color: Colors.white,
                       fontSize: 12,
@@ -60,7 +60,7 @@ class CustomDeatailsKid extends StatelessWidget {
             color: Colors.white,
           ),
           Text(
-            "MÔ tả ",
+            "Mô tả ",
             style: TextStyle(
                 color: Colors.white, fontSize: 20, fontFamily: 'SF-UI-BOLD'),
           ),

@@ -51,7 +51,7 @@ class _MyAppState extends State<MyApp> {
         const Duration(seconds: 3),
         () => Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => WeightHeight_Screen()),
+              MaterialPageRoute(builder: (context) => IntroPage2()),
             ));
   }
 

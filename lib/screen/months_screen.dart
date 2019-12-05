@@ -8,6 +8,19 @@ class MonthsScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("6 - 8 tháng"),
+        flexibleSpace: Container(
+          //height: 140,
+          decoration: BoxDecoration(
+            // borderRadius: BorderRadius.circular(30),
+            gradient: LinearGradient(
+                begin: Alignment.centerLeft,
+                end: Alignment.centerRight,
+                colors: [
+                  Color.fromRGBO(255, 114, 107, 1.0),
+                  Color.fromRGBO(255, 165, 131, 1.0),
+                ]),
+          ),
+        ),
       ),
       body: Container(
         child: Wrap(

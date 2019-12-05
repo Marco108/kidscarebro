@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kid/screen/weight_height.dart';
 
 class BodyKid_Screen extends StatelessWidget {
   @override
@@ -129,10 +130,18 @@ class BodyKid_Screen extends StatelessWidget {
                   ],
                 ),
               ),
-              child: Text(
-                "BẢN ĐỒ CHIỀU CAO",
-                style:
-                    TextStyle(color: Colors.white, fontFamily: "SF-UI-HEAVY"),
+              child: InkWell(
+                onDoubleTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => WeightHeight_Screen()));
+                },
+                child: Text(
+                  "BẢN ĐỒ CHIỀU CAO",
+                  style:
+                      TextStyle(color: Colors.white, fontFamily: "SF-UI-HEAVY"),
+                ),
               ),
             ),
           ),

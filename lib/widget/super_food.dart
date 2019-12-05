@@ -51,9 +51,14 @@ class Superwidget extends StatelessWidget {
                           ),
                           child: Row(
                             children: <Widget>[
-                              Text(
-                                subtitle,
-                                style: TextStyle(fontSize: 15),
+                              Container(
+                                width: MediaQuery.of(context).size.width * 0.21,
+                                // color: Colors.pink,
+                                child: Text(
+                                  subtitle,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: TextStyle(fontSize: 15),
+                                ),
                               ),
                               SizedBox(
                                 width: 43,
@@ -80,8 +85,7 @@ class Superwidget extends StatelessWidget {
               height: 130,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: NetworkImage(
-                      "https://www.themississaugafoodbank.org/wp-content/uploads/2017/06/hero-image@2x.png"),
+                  image: NetworkImage(image),
                   fit: BoxFit.cover,
                 ),
                 //color: Colors.white,

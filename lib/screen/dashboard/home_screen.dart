@@ -112,7 +112,7 @@ class _FoodScreenState extends State<HomeScreen> {
                       ? Container(
                           margin: EdgeInsets.only(left: 35),
                           child: Wrap(
-                            spacing: 30,
+                            spacing: 35,
                             children: List.generate(lstmenu.length, (index) {
                               return Container(
                                 child: FoodWidget(
