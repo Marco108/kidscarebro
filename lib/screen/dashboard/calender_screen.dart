@@ -54,7 +54,7 @@ class CalenderScreen extends StatelessWidget {
                     Container(
                       margin: EdgeInsets.only(top: 30),
                       child: CustomCheck(
-                          isChecked: "Done",
+                          isChecked: "Đã tiêm",
                           image:
                               "https://miro.medium.com/max/788/0*BO-DGN1z3Y3I9FXC.jpg",
                           text: "Vaccine Lao BBG",
@@ -71,29 +71,29 @@ class CalenderScreen extends StatelessWidget {
                     Container(
                       margin: EdgeInsets.only(top: 30),
                       child: CustomCheck(
-                          isChecked: "Done",
+                          isChecked: "Đã tiêm",
                           image:
                               "https://miro.medium.com/max/788/0*BO-DGN1z3Y3I9FXC.jpg",
                           text: "Vaccin Polio IPV",
-                          date: "26 july 2017"),
+                          date: "26 tháng 7 2017"),
                     ),
                     Container(
                       margin: EdgeInsets.only(top: 30),
                       child: CustomCheck(
-                          isChecked: "Done",
+                          isChecked: "Đã tiêm",
                           image:
                               "https://miro.medium.com/max/788/0*BO-DGN1z3Y3I9FXC.jpg",
                           text: "Vaccine ENGer B",
-                          date: "26 july 2017"),
+                          date: "26 tháng 7 2017"),
                     ),
                     Container(
                       margin: EdgeInsets.only(top: 30),
                       child: CustomCheck(
-                          isChecked: "Done",
+                          isChecked: "Đã tiêm",
                           image:
                               "https://miro.medium.com/max/788/0*BO-DGN1z3Y3I9FXC.jpg",
                           text: "Vaccine Penu",
-                          date: "26 july 2017"),
+                          date: "26 tháng 7 2017"),
                     ),
                   ],
                 ),
@@ -105,7 +105,7 @@ class CalenderScreen extends StatelessWidget {
                   margin: EdgeInsets.only(top: 10),
                   child: CustomCalender(
                     image: Image.asset("images/shape.png", height: 35),
-                    text: "03 Feb 2018\nNasopharyngtis",
+                    text: "10 tháng 2 2019\nNasopharyngtis",
                     //  text2: "Nasopharyngtis",
                   ),
                 ),
@@ -113,7 +113,7 @@ class CalenderScreen extends StatelessWidget {
                   margin: EdgeInsets.only(top: 5),
                   child: CustomCalender(
                     image: Image.asset("images/shape.png", height: 35),
-                    text: "23 Mar 2018\nSesonal Flu",
+                    text: "23 tháng 8 2019\nSesonal Flu",
                     //text2: "Sesonal Flu",
                   ),
                 ),
@@ -121,7 +121,7 @@ class CalenderScreen extends StatelessWidget {
                   margin: EdgeInsets.only(top: 5),
                   child: CustomCalender(
                     image: Image.asset("images/shape.png", height: 35),
-                    text: "15 May 2018\nEyesore",
+                    text: "30 tháng 5 2018\nEyesore",
                     //  text2: "Eyesore",
                   ),
                 ),
@@ -129,7 +129,7 @@ class CalenderScreen extends StatelessWidget {
                   margin: EdgeInsets.only(top: 5),
                   child: CustomCalender(
                     image: Image.asset("images/shape.png", height: 35),
-                    text: "24 Oct 2018\nNasopharyngtis",
+                    text: "23 tháng 10 2019\nNasopharyngtis",
                     // text2: "Nasopharyngtis",
                   ),
                 ),
@@ -140,7 +140,7 @@ class CalenderScreen extends StatelessWidget {
                       "images/shape.png",
                       height: 35,
                     ),
-                    text: "09 Feb 2018\nNasopharyngtis",
+                    text: "23 tháng 2 2019\nNasopharyngtis",
                     // text2: "Nasopharyngtis",
                   ),
                 ),

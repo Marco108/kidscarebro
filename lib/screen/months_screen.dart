@@ -7,7 +7,7 @@ class MonthsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("6 - 8 tháng"),
+        title: Text("1 - 4 tháng"),
         flexibleSpace: Container(
           //height: 140,
           decoration: BoxDecoration(
