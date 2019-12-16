@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:kid/fakedata/monthsmodel.dart';
+import 'package:kid/screen/details.dart';
 import 'package:kid/widget/months.dart';
 
 class MonthsScreen extends StatelessWidget {
+  final List<MonthsModel> monthsmodel;
+  MonthsScreen({this.monthsmodel});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("1 - 4 tháng"),
+        title: Text('title'),
         flexibleSpace: Container(
           //height: 140,
           decoration: BoxDecoration(
@@ -22,18 +25,24 @@ class MonthsScreen extends StatelessWidget {
           ),
         ),
       ),
-      body: Container(
-        child: Wrap(
-          //spacing: 40,
-          children: List.generate(lstmonths.length, (index) {
-            return Container(
-              child: MonthsWidget(
-                title: lstmonths[index].title,
-                subtitle: lstmonths[index].subtitle,
-                image: lstmonths[index].image,
-              ),
-            );
-          }),
+      body: InkWell(
+        onTap: () {
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => DetailsPage()));
+        },
+        child: Container(
+          child: Wrap(
+            //spacing: 40,
+            children: List.generate(monthsmodel.length, (index) {
+              return Container(
+                child: MonthsWidget(
+                  title: monthsmodel[index].title,
+                  subtitle: monthsmodel[index].subtitle,
+                  image: monthsmodel[index].image,
+                ),
+              );
+            }),
+          ),
         ),
       ),
     );

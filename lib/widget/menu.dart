@@ -1,14 +1,26 @@
 import 'package:flutter/material.dart';
 
-class FoodWidget extends StatelessWidget {
+class FoodWidget extends StatefulWidget {
   final String title;
   final String subtitle;
   final String image;
   final bool isFavorate;
+  final Function onTapicon;
   final Function onTap;
 
   FoodWidget(
-      {this.title, this.subtitle, this.image, this.isFavorate, this.onTap});
+      {this.title,
+      this.subtitle,
+      this.image,
+      this.isFavorate,
+      this.onTapicon,
+      this.onTap});
+
+  @override
+  _FoodWidgetState createState() => _FoodWidgetState();
+}
+
+class _FoodWidgetState extends State<FoodWidget> {
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -39,7 +51,7 @@ class FoodWidget extends StatelessWidget {
                           margin: EdgeInsets.only(left: 6),
                           alignment: Alignment.centerLeft,
                           child: Text(
-                            title,
+                            widget.title,
                             style: TextStyle(
                                 fontSize: 20, fontWeight: FontWeight.bold),
                           )),
@@ -52,11 +64,12 @@ class FoodWidget extends StatelessWidget {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: <Widget>[
-                            Text(subtitle, style: TextStyle(fontSize: 15)),
+                            Text(widget.subtitle,
+                                style: TextStyle(fontSize: 15)),
                             InkWell(
-                              onTap: onTap,
+                              onTap: widget.onTapicon,
                               child: Icon(Icons.favorite,
-                                  color: isFavorate == true
+                                  color: widget.isFavorate == true
                                       ? Colors.red
                                       : Colors.grey),
                             ),
@@ -75,14 +88,13 @@ class FoodWidget extends StatelessWidget {
           width: 110,
           left: 17,
           child: InkWell(
-            onTap: onTap,
+            onTap: widget.onTap,
             child: Container(
               width: 120,
               height: 130,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: NetworkImage(
-                      "https://www.themississaugafoodbank.org/wp-content/uploads/2017/06/hero-image@2x.png"),
+                  image: NetworkImage(widget.image),
                   fit: BoxFit.cover,
                 ),
                 //color: Colors.white,

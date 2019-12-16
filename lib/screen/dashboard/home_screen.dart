@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kid/fakedata/monthsmodel.dart';
 import 'package:shimmer/shimmer.dart';
 import 'package:kid/fakedata/modelmenu.dart';
 import 'package:kid/fakedata/modelsuper.dart';
@@ -112,19 +113,27 @@ class _FoodScreenState extends State<HomeScreen> {
                       ? Container(
                           margin: EdgeInsets.only(left: 35),
                           child: Wrap(
-                            spacing: 35,
+                            spacing: 50,
                             children: List.generate(lstmenu.length, (index) {
                               return Container(
                                 child: FoodWidget(
                                   title: lstmenu[index].title,
                                   subtitle: lstmenu[index].subtitle,
                                   image: lstmenu[index].image,
+                                  onTapicon: () {
+                                    setState(() {
+                                      lstmenu[index].isFavorate =
+                                          !lstmenu[index].isFavorate;
+                                    });
+                                  },
                                   isFavorate: lstmenu[index].isFavorate,
                                   onTap: () {
                                     Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                          builder: (_) => MonthsScreen(),
+                                          builder: (_) => MonthsScreen(
+                                            monthsmodel: listCount[0],
+                                          ),
                                         ));
                                   },
                                 ),
@@ -135,7 +144,7 @@ class _FoodScreenState extends State<HomeScreen> {
                       : Container(
                           margin: EdgeInsets.only(left: 35),
                           child: Wrap(
-                            spacing: 30,
+                            spacing: 50,
                             children: List.generate(lstsuper.length, (index) {
                               return Container(
                                 child: Superwidget(

@@ -46,18 +46,26 @@ class _LoginPageState extends State<LoginPage> {
                 children: <Widget>[
                   Container(
                     padding: EdgeInsets.only(bottom: 30.0),
-                    child: CustomTextField(
-                      hintPass: !_showPass,
-                      icon: Icon(Icons.lock),
-                      hintText: "Mật khẩu",
+                    child: TextField(
+                      obscureText: !_showPass,
+                      decoration: InputDecoration(
+                        icon: Icon(Icons.lock),
+                        hintText: 'Mật khẩu',
+                        suffixIcon: GestureDetector(
+                          onTap: () {
+                            onToggleShowPass();
+                          },
+                          child: Icon(
+                              _showPass
+                                  ? Icons.visibility
+                                  : Icons.visibility_off,
+                              semanticLabel: _showPass
+                                  ? 'hiển thị mật khẩu'
+                                  : 'ẩn mật khẩu'),
+                        ),
+                      ),
                     ),
                   ),
-                  GestureDetector(
-                    onTap: onToggleShowPass,
-                    child: Text(_showPass ? "Hide" : "Show",
-                        style: TextStyle(
-                            color: Colors.blue, fontWeight: FontWeight.bold)),
-                  )
                 ],
               ),
               Container(

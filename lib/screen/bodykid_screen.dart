@@ -131,7 +131,7 @@ class BodyKid_Screen extends StatelessWidget {
                 ),
               ),
               child: InkWell(
-                onDoubleTap: () {
+                onTap: () {
                   Navigator.push(
                       context,
                       MaterialPageRoute(

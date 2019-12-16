@@ -27,7 +27,7 @@ class CustomTextField extends StatelessWidget {
   final Icon icon;
   final String hintText;
   final bool hintPass;
-  CustomTextField({this.icon, @required this.hintText, this.hintPass});
+  CustomTextField({this.icon, this.hintText, this.hintPass});
   @override
   Widget build(BuildContext context) {
     return Container(

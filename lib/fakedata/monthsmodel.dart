@@ -12,7 +12,7 @@ class MonthsModel {
   }
 }
 
-List<MonthsModel> lstmonths = [
+List<MonthsModel> lstmonths1 = [
   MonthsModel('Cháo cà rốt', 'Đây là thức ăn giàu chất dinh dưỡng',
       'https://gonhub.com/wp-content/uploads/2018/10/cach-nau-chao-luon-ca-rot-chao-tom-ca-rot-ngon-cho-be-an-dam-mau-tang-can-20180808-08-2018-010249.jpg'),
   MonthsModel('Cháo bắp', 'Đây là thức ăn giàu chất dinh dưỡng ',
@@ -25,4 +25,82 @@ List<MonthsModel> lstmonths = [
       'http://www.mabu.vn/wp-content/uploads/2017/05/sup-khoai-tay-pho-mai.jpg'),
   MonthsModel('Táo nấu', 'Đây là thức ăn giàu chất dinh dưỡng ',
       'https://i.ytimg.com/vi/wtCjgHIcwYU/maxresdefault.jpg'),
+];
+List<MonthsModel> lstmonths2 = [
+  MonthsModel('Cháo cà rốt', 'Đây là thức ăn giàu chất dinh dưỡng',
+      'https://gonhub.com/wp-content/uploads/2018/10/cach-nau-chao-luon-ca-rot-chao-tom-ca-rot-ngon-cho-be-an-dam-mau-tang-can-20180808-08-2018-010249.jpg'),
+  MonthsModel('Cháo bắp', 'Đây là thức ăn giàu chất dinh dưỡng ',
+      'https://emvaobep.com/wp-content/uploads/2018/07/cach-nau-chao-ngo-cho-be-an-dam-4.jpg'),
+  MonthsModel('Sữa chua trộn dâu tây', 'Đây là thức ăn giàu chất dinh dưỡng ',
+      'https://dayphache.edu.vn/wp-content/uploads/2019/05/hinh-sua-chua-dau-tay.jpg'),
+  MonthsModel('Cháo bí đỏ sữa', 'Đây là thức ăn giàu chất dinh dưỡng ',
+      'https://vinid.net/wp-content/uploads/2019/09/chao-bi-do.jpg'),
+  MonthsModel('Cháo khoai tây sữa', 'Đây là thức ăn giàu chất dinh dưỡng ',
+      'http://www.mabu.vn/wp-content/uploads/2017/05/sup-khoai-tay-pho-mai.jpg'),
+  MonthsModel('Táo nấu', 'Đây là thức ăn giàu chất dinh dưỡng ',
+      'https://i.ytimg.com/vi/wtCjgHIcwYU/maxresdefault.jpg'),
+];
+List<MonthsModel> lstmonths3 = [
+  MonthsModel('Cháo cà rốt', 'Đây là thức ăn giàu chất dinh dưỡng',
+      'https://gonhub.com/wp-content/uploads/2018/10/cach-nau-chao-luon-ca-rot-chao-tom-ca-rot-ngon-cho-be-an-dam-mau-tang-can-20180808-08-2018-010249.jpg'),
+  MonthsModel('Cháo bắp', 'Đây là thức ăn giàu chất dinh dưỡng ',
+      'https://emvaobep.com/wp-content/uploads/2018/07/cach-nau-chao-ngo-cho-be-an-dam-4.jpg'),
+  MonthsModel('Sữa chua trộn dâu tây', 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+      'https://dayphache.edu.vn/wp-content/uploads/2019/05/hinh-sua-chua-dau-tay.jpg'),
+  MonthsModel('Cháo bí đỏ sữa', 'Đây là thức ăn giàu chất dinh dưỡng ',
+      'https://vinid.net/wp-content/uploads/2019/09/chao-bi-do.jpg'),
+  MonthsModel('Cháo khoai tây sữa', 'Đây là thức ăn giàu chất dinh dưỡng ',
+      'http://www.mabu.vn/wp-content/uploads/2017/05/sup-khoai-tay-pho-mai.jpg'),
+  MonthsModel('Táo nấu', 'Đây là thức ăn giàu chất dinh dưỡng ',
+      'https://i.ytimg.com/vi/wtCjgHIcwYU/maxresdefault.jpg'),
+];
+List<MonthsModel> lstmonths4 = [
+  MonthsModel('Cháo cà rốt', 'Đây là thức ăn giàu chất dinh dưỡng',
+      'https://gonhub.com/wp-content/uploads/2018/10/cach-nau-chao-luon-ca-rot-chao-tom-ca-rot-ngon-cho-be-an-dam-mau-tang-can-20180808-08-2018-010249.jpg'),
+  MonthsModel('Cháo bắp', 'Đây là thức ăn giàu chất dinh dưỡng ',
+      'https://emvaobep.com/wp-content/uploads/2018/07/cach-nau-chao-ngo-cho-be-an-dam-4.jpg'),
+  MonthsModel('Sữa chua trộn dâu tây', 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+      'https://dayphache.edu.vn/wp-content/uploads/2019/05/hinh-sua-chua-dau-tay.jpg'),
+  MonthsModel('Cháo bí đỏ sữa', 'Đây là thức ăn giàu chất dinh dưỡng ',
+      'https://vinid.net/wp-content/uploads/2019/09/chao-bi-do.jpg'),
+  MonthsModel('Cháo khoai tây sữa', 'Đây là thức ăn giàu chất dinh dưỡng ',
+      'http://www.mabu.vn/wp-content/uploads/2017/05/sup-khoai-tay-pho-mai.jpg'),
+  MonthsModel('Táo nấu', 'Đây là thức ăn giàu chất dinh dưỡng ',
+      'https://i.ytimg.com/vi/wtCjgHIcwYU/maxresdefault.jpg'),
+];
+List<MonthsModel> lstmonths5 = [
+  MonthsModel('Cháo cà rốt', 'Đây là thức ăn giàu chất dinh dưỡng',
+      'https://gonhub.com/wp-content/uploads/2018/10/cach-nau-chao-luon-ca-rot-chao-tom-ca-rot-ngon-cho-be-an-dam-mau-tang-can-20180808-08-2018-010249.jpg'),
+  MonthsModel('Cháo bắp', 'Đây là thức ăn giàu chất dinh dưỡng ',
+      'https://emvaobep.com/wp-content/uploads/2018/07/cach-nau-chao-ngo-cho-be-an-dam-4.jpg'),
+  MonthsModel('Sữa chua trộn dâu tây', 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+      'https://dayphache.edu.vn/wp-content/uploads/2019/05/hinh-sua-chua-dau-tay.jpg'),
+  MonthsModel('Cháo bí đỏ sữa', 'Đây là thức ăn giàu chất dinh dưỡng ',
+      'https://vinid.net/wp-content/uploads/2019/09/chao-bi-do.jpg'),
+  MonthsModel('Cháo khoai tây sữa', 'Đây là thức ăn giàu chất dinh dưỡng ',
+      'http://www.mabu.vn/wp-content/uploads/2017/05/sup-khoai-tay-pho-mai.jpg'),
+  MonthsModel('Táo nấu', 'Đây là thức ăn giàu chất dinh dưỡng ',
+      'https://i.ytimg.com/vi/wtCjgHIcwYU/maxresdefault.jpg'),
+];
+List<MonthsModel> lstmonths6 = [
+  MonthsModel('Cháo cà rốt', 'Đây là thức ăn giàu chất dinh dưỡng',
+      'https://gonhub.com/wp-content/uploads/2018/10/cach-nau-chao-luon-ca-rot-chao-tom-ca-rot-ngon-cho-be-an-dam-mau-tang-can-20180808-08-2018-010249.jpg'),
+  MonthsModel('Cháo bắp', 'Đây là thức ăn giàu chất dinh dưỡng ',
+      'https://emvaobep.com/wp-content/uploads/2018/07/cach-nau-chao-ngo-cho-be-an-dam-4.jpg'),
+  MonthsModel('Sữa chua trộn dâu tây', 'AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA',
+      'https://dayphache.edu.vn/wp-content/uploads/2019/05/hinh-sua-chua-dau-tay.jpg'),
+  MonthsModel('Cháo bí đỏ sữa', 'Đây là thức ăn giàu chất dinh dưỡng ',
+      'https://vinid.net/wp-content/uploads/2019/09/chao-bi-do.jpg'),
+  MonthsModel('Cháo khoai tây sữa', 'Đây là thức ăn giàu chất dinh dưỡng ',
+      'http://www.mabu.vn/wp-content/uploads/2017/05/sup-khoai-tay-pho-mai.jpg'),
+  MonthsModel('Táo nấu', 'Đây là thức ăn giàu chất dinh dưỡng ',
+      'https://i.ytimg.com/vi/wtCjgHIcwYU/maxresdefault.jpg'),
+];
+List<List<MonthsModel>> listCount = [
+  lstmonths1,
+  lstmonths2,
+  lstmonths3,
+  lstmonths4,
+  lstmonths5,
+  lstmonths6,
 ];
